@@ -2,9 +2,10 @@ import urllib.request
 import numpy as np
 import cv2
 
-api_key = '<api key here>'
-start_point = np.array([57.588179, 12.113134])
-end_point = np.array([57.580574, 12.156631])
+f = open("api_key.txt", "r")
+api_key = f.read()
+start_point = np.array([57.645619, 11.960694])
+end_point = np.array([57.641363, 11.975439])
 size = abs(start_point-end_point)
 
 zoom = 19
