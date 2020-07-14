@@ -1,15 +1,20 @@
 /* Add a black background color to the top navigation */
 body {
     background-color: #F1F3F4;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 300;
 }
 
 .topnav {
-  background-color: #039be5;
+  background-color: #1976d2;
   overflow: hidden;
   width: 100% + 16px;
   margin-left: -8px;
   margin-right: -8px;
   margin-top: -8px;
+  box-shadow: 0px 3px 5px grey;
 }
 
 /* Style the links inside the navigation bar */
@@ -17,20 +22,81 @@ body {
   float: left;
   color: white;
   text-align: center;
+  border-radius: 3px;
   padding: 7px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-weight: 300;
   font-family: 'Roboto', sans-serif;
+  margin: 6px 3px;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #63ccff;
+  background-color: #63a4ff;
   color: white;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #006db3;
+  font-weight: 400;
   color: white;
+}
+
+h2 {
+    font-weight: 100;
+    font-size: 40px;
+}
+.content {
+    background-color: #1976D2;
+    padding: 10px;
+    border-radius: 7px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    float: center;
+    width: 350px;
+    height: 400px;
+    box-shadow: 0px 3px 5px grey;
+}
+
+input[type=text], input[type=password], select{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #3C4043;
+  font-size: 14px;
+}
+
+input:focus, textarea:focus, select:focus{
+        outline: none;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #f1f3f4;
+  color: #3C4043;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+input[type=submit]:hover {
+  background-color: #e9e9e9;
+}
+
+p a{
+color: white;
+text-decoration: none;
+}
+
+p a:hover{
+color: white;
+text-decoration: underline;
 }
